@@ -1,0 +1,317 @@
+/* -------------------------------------------------
+  ✅ IMPORT FONTS FROM GOOGLE
+-------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+/* -------------------------------------------------
+  ✅ RESET DEFAULT BROWSER STYLES
+-------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------------------------
+  ✅ MAIN BACKGROUND SECTION (HERO BANNER)
+-------------------------------------------------- */
+.main {
+  background-image: url("Assets/Images/background.jpg");
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  width:100%;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: top; /* adjust position on smaller screens */
+  }
+}
+
+/* Overall body background */
+body {
+  background-color: black;
+}
+
+/* Black overlay on main background */
+.main .box {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.75;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+/* -------------------------------------------------
+  ✅ NAVBAR STYLING
+-------------------------------------------------- */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin: auto;
+  max-width: 90vw;
+  height: 62px;
+}
+
+nav img {
+  width: 145px;
+  z-index: 10;
+  position: relative;
+  margin-top: 10px;
+}
+
+nav button {
+  z-index: 10;
+  position: relative;
+}
+
+/* -------------------------------------------------
+  ✅ HERO TEXT SECTION
+-------------------------------------------------- */
+.hero {
+  height: calc(100%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  font-family: manufacturing-consent, sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Hero Main Heading */
+.hero > :nth-child(1) {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Martel Sans", sans-serif;
+  margin-top: -40px;
+  text-align: center;
+}
+
+/* Hero Subtext Line 1 */
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  margin-top: -5px;
+  text-align: center;
+}
+
+/* Hero Subtext Line 2 */
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* -------------------------------------------------
+  ✅ COLORFUL SEPARATOR LINE
+-------------------------------------------------- */
+.saparation {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #f61515, #db0564); /* Pink gradient */
+  box-shadow: 0 8px 15px rgba(1, 27, 255, 7); /* Blue glow */
+  margin-top: -120px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  border-radius: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------------------------------------------
+  ✅ BUTTON STYLES
+-------------------------------------------------- */
+btn {
+  background-color: white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.eng {
+  padding: 6px 20px;
+  background-color: rgba(23, 23, 23, 0.6);
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+
+.main input {
+  padding: 4px 24px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: rgba(71, 66, 66, 0.2);
+  color: #fffefe;
+  border: 1px solid rgb(68, 61, 61);
+}
+
+.btn-red sm {
+  background-color: red;
+  color: white;
+}
+
+/* -------------------------------------------------
+  ✅ TRENDING MOVIES SECTION
+-------------------------------------------------- */
+.movie-section {
+  background-color: black;
+  padding: 30px 5%;
+}
+
+/* Section title for all sections */
+.section-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Martel Sans", sans-serif;
+}
+
+/* Horizontal scroll movie container */
+.movie-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 10px 0;
+  scroll-behavior:smooth;
+}
+
+/* Individual movie tile box */
+.movie-tile {
+  position: relative;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Hover effect on movie tiles */
+.movie-tile:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 30px rgba(255, 0, 0, 0.4);
+}
+
+.movie-tile img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Number on bottom-left of movie tile */
+.movie-number {
+  position: absolute;
+  bottom: 8px;
+  left: -1px;
+  background-color: rgba(6, 6, 6, 0.1);
+  color: white;
+  padding: 2px 8px;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-family: "Martel Sans", sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+/* -------------------------------------------------
+  ✅ PINK/BLUE 4-GRID SECTION (More Reasons to Join)
+-------------------------------------------------- */
+.reasons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Individual reason cards with gradient */
+.reason-card {
+  background: linear-gradient(125deg, #ad00fdfd, #0400ff);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(3px);
+  box-shadow: 0 16px 30px rgba(255, 0.5, 255, 0.5);
+}
+
+.reason-card h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  text-shadow: 1px 1px 3px rgb(255, 0, 0);
+}
+
+.reason-card p {
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* -------------------------------------------------
+  ✅ GRAY INFO SECTION (What Makes Netflix Better)
+-------------------------------------------------- */
+.gray-section {
+  background-color: #000000;
+  color: white;
+  padding: 60px 5%;
+  text-align: justify;
+}
+
+.gray-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gray-card {
+  background-color: #3b3b3b;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gray-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.1);
+}
+
+.gray-card h3 {
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+
+.gray-card p {
+  font-size: 16px;
+  color: #ccc;
+}
