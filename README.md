@@ -14,7 +14,7 @@ I'm currently learning **JavaScript**, and this project is one of my first pract
 ## 📽️ Demo Video
 
 🎥 **Watch the Live Demo of the Clone**  
-🔗 [Click to View Demo]()  
+🔗 [Click to View Demo](https://github.com/Maverick-2207/Netflix-Clone/blob/Mainframe/Netflix%20Clone%20-%20Google%20Chrome%202025-07-19%2000-31-29.mp4)  
 
 
 ---
